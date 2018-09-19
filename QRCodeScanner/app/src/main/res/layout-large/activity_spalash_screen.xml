@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="#ffffff"
+    tools:context=".Home">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/resolvelogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="center|top"
+        android:gravity="center|top"
+        android:text="@string/hometext1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:text="@string/hometext"/>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/idgotoscaner"
+        android:layout_gravity="center|top"
+        android:gravity="center|top"
+        android:src="@drawable/scanimage"/>
+
+
+</LinearLayout>

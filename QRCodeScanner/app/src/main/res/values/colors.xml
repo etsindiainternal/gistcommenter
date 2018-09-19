@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#FF1380C2</color>
+    <color name="colorAccent">#FF1380C2</color>
+    <color name="colorPrimary">#1875AE</color>
+    <color name="titletextcolor">#ffffff</color>
+    <color name="butoncolorcode">#2D96C9</color>
+    <color name="usernsmecolor">#2D96C9</color>
+    <color name="transperant">#99000000</color>
+    <color name="detailcolor">#FFE0E8F2</color>
+</resources>

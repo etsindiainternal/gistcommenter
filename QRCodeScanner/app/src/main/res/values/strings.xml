@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gist Commenter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnok">OK, I understand</string>
+    <string name="cancel">Cancel</string>
+    <string name="comments">Comments</string>
+    <string name="githubsignin">GitHub Signin</string>
+    <string name="gitloginmsg">Please use your GitHub user credentials to comment</string>
+    <string name="githubpassword">GitHub password</string>
+    <string name="githubusername">GitHub username or email address</string>
+    <string name="cmt">Comment</string>
+    <string name="entercmt">Leave a comment</string>
+    <string name="back">Back To Scan</string>
+    <string name="scanermsg">Place the QR code inside the \n viewfinder</string>
+    <string name="hometext">Touch below to \n start scanning</string>
+    <string name="hometext1">GitHub Gist Commenter</string>
+</resources>

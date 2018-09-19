@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="@color/colorPrimary"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/titletextcolor"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:text="@string/githubsignin"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center|right"
+            android:id="@+id/cancelcmt"
+
+            android:gravity="center|right"
+            android:src="@drawable/closedialog"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/gitloginmsg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/githubusername"
+        android:id="@+id/userid"
+        android:inputType="text"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/githubpassword"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:id="@+id/userpass"
+        android:maxLines="1"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:text="@string/cmt"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sendcmtid"
+
+                android:layout_weight="1"
+                android:background="@color/butoncolorcode"
+                android:textColor="@color/titletextcolor"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

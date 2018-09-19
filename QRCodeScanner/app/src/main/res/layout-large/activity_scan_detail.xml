@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/titletextcolor"
+    tools:context=".ScanDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/idAvtar"
+            android:src="@mipmap/avtar"/>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/txtusernameid"
+                android:textStyle="bold"
+                android:textColor="@color/usernsmecolor"
+                android:text="name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/txtcreatedonid"
+                android:textSize="13dp"
+                android:text="createdon"/>
+
+
+        </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/txtdiscriptionid"
+            android:text="disc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/detaillistview"
+        android:dividerHeight="0dp"
+        android:divider="@color/transperant"
+        android:layout_height="450dp">
+    </ListView>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="0.5dp">
+
+        </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/comments"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comentlistview"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:divider="@color/transperant"
+        android:layout_marginBottom="50dp">
+    </ListView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/butoncolorcode"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:id="@+id/entercmtid"
+            android:background="@drawable/edittextshape"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/titletextcolor"
+            android:hint="@string/entercmt"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/sendcmt"
+            android:padding="10dp"
+            android:src="@drawable/sendcmt"/>
+    </LinearLayout>
+
+</RelativeLayout>
